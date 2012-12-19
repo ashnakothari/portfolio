@@ -1,0 +1,214 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd9d5f8b2a895d44958c61a67dd7e4e849')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Home.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9d5f8b2a895d44958c61a67dd7e4e849">Home</SPAN></A><DIV id="d9d5f8b2a895d44958c61a67dd7e4e849">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Upload_1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7ad8050e703f481ca51d788ce6d0ecb0">Upload 1</SPAN></A><DIV id="td7ad8050e703f481ca51d788ce6d0ecb0">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='create_1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p6ea87332351f4f599bac7b9d805a6653">create 1</SPAN></A><DIV id="td6ea87332351f4f599bac7b9d805a6653">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='create_2.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p66d9e69e2f4c48498ee0579065ab2ebb">create 2</SPAN></A><DIV id="td66d9e69e2f4c48498ee0579065ab2ebb">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='create_3.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pafefe16ee9c0419588053b3a37b02274">create 3</SPAN></A><DIV id="tdafefe16ee9c0419588053b3a37b02274">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='browse.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p82162d9775a24930acde5df1580d9088">browse</SPAN></A><DIV id="td82162d9775a24930acde5df1580d9088">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='create_4.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="paa4118f078eb471c8aa6b33601f03e7c">create 4</SPAN></A><DIV id="tdaa4118f078eb471c8aa6b33601f03e7c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='uploading1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p1772ae30f1c74f86a6593c4e9e552da7">uploading1</SPAN></A><DIV id="td1772ae30f1c74f86a6593c4e9e552da7">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='uploading2.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p44e924ad66ad433ba61ce3326917ce5f">uploading2</SPAN></A><DIV id="td44e924ad66ad433ba61ce3326917ce5f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='uploaded.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p79cd0bd506634fdba7b011525aa3874f">uploaded</SPAN></A><DIV id="td79cd0bd506634fdba7b011525aa3874f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='manage1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3d93b4266eef4adcb529c592680c5011">manage1</SPAN></A><DIV id="td3d93b4266eef4adcb529c592680c5011">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='manage2.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pbfb70cc9e4674829ab53ec52bc155e1f">manage2</SPAN></A><DIV id="tdbfb70cc9e4674829ab53ec52bc155e1f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='manage_3.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p469e1f731b364d85bedb3137c605bfc0">manage 3</SPAN></A><DIV id="td469e1f731b364d85bedb3137c605bfc0">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='album_cover_change.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7bbe09d0beda482b811087efa04ff94e">album cover change</SPAN></A><DIV id="td7bbe09d0beda482b811087efa04ff94e">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='share_1.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p4c4c4ed7936c49269fd4c513f55d1959">share 1</SPAN></A><DIV id="td4c4c4ed7936c49269fd4c513f55d1959">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='share_3.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pbe3f0ec1272b4ffeb7150b3faa173af0">share 3</SPAN></A><DIV id="tdbe3f0ec1272b4ffeb7150b3faa173af0">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='edit_group_popup.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p2fa7aaedaafd4285baf0580a0112d2ef">edit group popup</SPAN></A><DIV id="td2fa7aaedaafd4285baf0580a0112d2ef">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='share_4.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p13e56cb23b0c41e7bc69cfdcd323f670">share 4</SPAN></A><DIV id="td13e56cb23b0c41e7bc69cfdcd323f670">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='share_5.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p1a2aadcfee47454b8ae32a08fccac6c0">share 5</SPAN></A><DIV id="td1a2aadcfee47454b8ae32a08fccac6c0">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>

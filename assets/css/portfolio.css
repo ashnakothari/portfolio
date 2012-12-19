@@ -1,0 +1,272 @@
+.hero-unit {
+	box-shadow: 0 0 5px grey;
+    padding: 10px 40px;
+    margin-bottom: 0px;
+}
+
+.hero-unit:hover{
+    box-shadow: 0 0 5px #00CBE9;
+}
+
+.brand-text{
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+.navbar .nav{
+    margin-top: 28px;
+}
+
+.navbar-form{
+    margin-top: 28px;
+}
+
+.navbar .nav .active a{
+    border-radius: 6px;
+}
+
+.navbar .btn-navbar {
+    margin-top: 28px;
+}
+
+.addMargin10{
+    margin-top:20px;
+}
+
+/* This is for the project home page*/
+.projWidget{
+    display: inline-block;
+}
+.typeImgDiv{
+    width: 16%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.projImgDiv{
+    display:inline-block;   
+     width: 80%; 
+}
+
+.projImgDiv img{
+    width:300px;
+    height:200px;
+}
+
+.projImgIcon{
+    width: 70%;
+}
+
+
+
+.fixed-left-center{
+    position: fixed;
+    top:150px;
+    left: 0px;
+}
+
+.customFilterInner{
+    width: 75px;
+}
+
+.customProjectIcon{
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid grey;
+    box-shadow: 0 0 5px black;    
+}
+
+.projDesc{
+    background-color: rgba(0,0,0,0.7);
+    height: 20px;
+    position:relative;
+    top: -30px;
+    color: white;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+/* Styles for Project Detail Pages */
+.projimg
+{
+    background-color: #fff;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 2px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 2px 0px;
+    width:75%;
+    padding:10px;
+    border:1px solid #E6E5E5;
+    margin:10px auto 20px auto;
+    overflow:hidden;
+    text-align: center;
+}
+
+.projimg img{
+    box-shadow: 0 0 5px grey;
+}
+
+.tag_img{
+    width: 70%;
+}
+
+.tagsList{
+    list-style: none;
+}
+
+.tagsList li{
+    float: left;
+}
+
+/* Styles for individual project page */
+.container ul
+{
+    list-style-type: none;
+    
+
+}
+
+.container ul img
+{
+    width:40px;
+}
+
+.container h4
+{
+    width:75%;
+    padding:10px;
+    border:1px solid #E6E5E5;
+    margin:10px auto 20px auto;
+    overflow:hidden;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    color:#ccc;
+    }
+/* Styles for Resume page */
+#resumehead-left
+{
+    float:left;
+    width:70%;
+}
+
+#resumehead-left ul
+{
+    list-style-type: none;
+    float:left;
+    margin-top:10px;
+
+
+}
+
+#resumehead-right
+{
+    float:right;
+}
+
+.resumehead-titles
+{
+    font-weight: bold;
+}
+
+#education
+{
+    
+    float:left;
+}
+
+#resumehead-right ul
+{
+    list-style-type: none;
+    margin:0;
+    padding: 5px 0 0 0;
+}
+
+#resumehead-right h3 {
+margin: 0px;
+width: 300px;
+font-size: 20px;
+padding:0;
+
+}
+
+#resumehead-right hr {
+padding: 0px;
+margin: 5px 0px;
+}
+
+
+/******* Preloader **************/
+
+.preloader .bubbles{    
+    text-align: center;
+}
+
+.bubbles span {
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin: 30px auto;
+  background: #fe576c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: bubbly 0.9s infinite alternate; 
+}
+
+
+
+#bubble2 {
+  -webkit-animation-delay: 0.27s; 
+}
+
+#bubble3 {
+  -webkit-animation-delay: 0.54s; 
+}
+
+@-webkit-keyframes bubbly {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    -webkit-transform: translateY(0); 
+    }
+
+
+
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    -webkit-transform: translateY(-32px); 
+    } 
+}
+
+
+
+@-moz-keyframes bubbly {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    -webkit-transform: translateY(0); 
+    }
+
+
+
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    -webkit-transform: translateY(-32px); 
+    } 
+  }
+
+
+
+
+

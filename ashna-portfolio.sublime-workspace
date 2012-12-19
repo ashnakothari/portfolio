@@ -1,0 +1,224 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pro",
+				"projImgDiv"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"row",
+				"rowSpan"
+			],
+			[
+				"ele",
+				"eleClass"
+			],
+			[
+				"pare",
+				"parentContainer"
+			],
+			[
+				"proje",
+				"projects"
+			],
+			[
+				"catan",
+				"catanHex"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"webkit-bo",
+				"-webkit-border-radius:   (property)"
+			],
+			[
+				"moz-border",
+				"-moz-border-radius:   (property)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/darshilvora/Dropbox/ashna_portfolio/UXDesign.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/ISOSDev.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/assets/css/portfolio.css",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/ProjectHome.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/QMetryWebsite.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/GraphicDesign.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/InteractionDesign.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/Razemedia.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/UrgntlyWebsite.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/AboutMe.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/PicassaRedesign.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/index.html",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/assets/css/bootstrap.css",
+		"/Users/darshilvora/Dropbox/ashna_portfolio/assets/css/bootstrap-responsive.css",
+		"/Users/darshilvora/Dev/sample_app/app/views/client/users/index.coffee",
+		"/Users/darshilvora/Dev/sample_app/app/views/client/layout/application.coffee",
+		"/Users/darshilvora/Dev/sample_app/app/controllers/server/usersController.coffee",
+		"/Users/darshilvora/Dev/sample_app/app/controllers/client/usersController.coffee",
+		"/Users/darshilvora/Dev/sample_app/app/config/shared/routes.coffee",
+		"/Users/darshilvora/Dev/sample_app/public/javascripts/app/templates/client/index.js",
+		"/Users/darshilvora/Dev/sample_app/app/config/shared/application.coffee",
+		"/Users/darshilvora/Dev/sample_app/app/models/shared/user.coffee",
+		"/Users/darshilvora/Dev/myride/config/database.yml",
+		"/Users/darshilvora/Dev/myride/config.ru"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"usersController.coffee",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"myWidget",
+			"h4",
+			"filter",
+			"projImgDiv",
+			"navbar",
+			"body {",
+			"body{",
+			"body",
+			"container",
+			"Post"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true
+}

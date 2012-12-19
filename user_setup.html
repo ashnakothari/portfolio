@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CatanMod</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catan Moderator">
+    <meta name="author" content="Catan Moderator">
+
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="./assets/css/custom_template.css" rel="stylesheet">-->
+    
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- the fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->      
+      <div>
+        <p class="addMargin">
+          <div class="row">
+            <div class="span12">
+				<div class="form-inline">
+					<input type="text" id="player1" placeholder="player 1">
+					<div class="btn-group" data-toggle="buttons-radio" id="1">
+						<button class="btn" type="button" id="red">red</button>
+						<button class="btn" type="button" id="blue">blue</button>
+						<button class="btn" type="button" id="orange">orange</button>
+						<button class="btn" type="button" id="white">white</button>
+					</div>
+				</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+				<div class="form-inline">
+					<input type="text" id="player2" placeholder="player 2">
+					<div class="btn-group" data-toggle="buttons-radio" id="2">
+						<button class="btn" type="button" id="red">red</button>
+						<button class="btn" type="button" id="blue">blue</button>
+						<button class="btn" type="button" id="orange">orange</button>
+						<button class="btn" type="button" id="white">white</button>
+					</div>
+				</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+				<div class="form-inline">
+					<input type="text" id="player3" placeholder="Player 3">
+					<div class="btn-group" data-toggle="buttons-radio" id="3">
+						<button class="btn" type="button" id="red">red</button>
+						<button class="btn" type="button" id="blue">blue</button>
+						<button class="btn" type="button" id="orange">orange</button>
+						<button class="btn" type="button" id="white">white</button>
+					</div>
+				</div>
+            </div>
+          </div>
+		<div class="row">
+            <div class="span12">
+				<div class="form-inline">
+					<input type="text" id="player4" placeholder="Player 4">
+					<div class="btn-group" data-toggle="buttons-radio" id="4">
+						<button class="btn" type="button" id="red">red</button>
+						<button class="btn" type="button" id="blue">blue</button>
+						<button class="btn" type="button" id="orange">orange</button>
+						<button class="btn" type="button" id="white">white</button>
+					</div>
+				</div>
+            </div>
+          </div>
+        </p>
+      </div>              
+    </div> <!-- /container -->
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+		//UI components represented as JSON object
+		var UI_Components = {
+			"elements" : 
+			[
+				{
+					"type" : "div",
+					"class" : "userWrapper",
+					"childElements" : [
+						{
+							//this is the image div
+							"type" : "div",
+							"class" : "userImage",
+							"imageEle" : {
+								"src" : "",
+								"alt" : ""
+							}
+						},
+						{
+							//this is the text div
+							"type" : "div",
+							"class" : "textDiv",
+							"textEle" : {
+								"id" : "player1",
+								"type" : "text",
+								"placeholder" : "Player 1"
+							}
+						},
+						{
+							//this is the button group
+							"type" : "div",
+							"class" : "textDiv",
+							"data-toggle" : "buttons-radio",
+							"id" : "1",
+							"buttonEle" : [
+								{
+									"type" : "button",
+									"class" : "btn redBtn",
+									"type" : "button"
+								},
+								{
+									"type" : "button",
+									"class" : "btn blueBtn",
+									"type" : "button"
+								},
+								{
+									"type" : "button",
+									"class" : "btn greenBtn",
+									"type" : "button"
+								},
+								{
+									"type" : "button",
+									"class" : "btn whiteBtn",
+									"type" : "button"
+								}
+							]							
+						}
+					]
+				}
+			]
+		};
+		
+		function elementCreateHelper(eleType, eleId, eleClass) {
+	      	var returnEle = document.createElement(eleType);
+		    returnEle.setAttribute("class", eleClass);
+		    returnEle.setAttribute("id", eleId);
+		    return returnEle;
+	    }
+		
+		$(document).ready(function() {
+	    	var colorAlloc = ["red", "orange", "blue", "white"];
+
+			//the parent element
+			var totalGroups = 4
+			var parent;
+			var child;
+			for(var grp=1; grp<=totalGroups; grp++) {
+				
+				/*if(il>4) {
+					//start row 2
+					rowEle = elementCreateHelper("div", uniqueList[il],"btn btn-primary btn-large cBtn");
+					rowEle.innerHTML = uniqueList[il];
+					parent2.appendChild(rowEle);
+				} else {
+					//fill row 1
+					rowEle = elementCreateHelper("div", uniqueList[il],"btn btn-primary btn-large cBtn");
+					rowEle.innerHTML = uniqueList[il];
+					parent1.appendChild(rowEle);
+				}*/
+			}
+	    });
+	</script>
+  </body>
+</html>

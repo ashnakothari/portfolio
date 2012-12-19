@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ashna Kothari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of @ashnakothari">
+    <meta name="author" content="Ashna Kothari">
+
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/portfolio.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 100px;
+        padding-bottom: 40px;
+      }
+      #backContainer{
+        display: none;
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- the fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">
+              <img src="./assets/img/mylogo.png" alt="" style="width:75px;" />
+              <span class="brand-text">Ashna Kothari</span>
+              </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="./index.html">Home</a></li>
+              <li class="active"><a href="#Projects">Projects</a></li> 
+              <li><a href="./AboutMe.html">About</a></li> 
+            </ul> 
+            <form class="navbar-form pull-right">
+              <div class="btn btn-medium">I Love Feedback!</div></div>
+            </form>           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="customProjectFilter fixed-left-center btn-group btn-group-vertical">
+     <!-- <div class="customFilterInner">
+          <div class="customProjectIcon btn" filter-value="web">Web</div>
+          <div class="customProjectIcon btn" filter-value="mobile">Mobile</div>
+          <div class="customProjectIcon btn" filter-value="ux_review">UX Review</div>
+          <div class="customProjectIcon btn" filter-value="ui_design">UI Design</div>
+      </div> -->
+    </div>
+    <div class="container" id="backContainer">
+      <div class="btn btn-medium" onclick="takeMeBack()">Back</div>
+    </div>
+    <div id="mainContent" class="container">
+      <div class="row">          
+        <div class="span4 addMargin10 myWidget ">
+          <div class="projWidget" data-type="web">
+            <div class="typeImgDiv">
+              <img src="./assets/img/PlatformIcons/Android.png" alt="" class="img-circle projImgIcon" />
+              <img src="./assets/img/PlatformIcons/iPhone.png" alt="" class="img-circle projImgIcon"  />
+              <img src="./assets/img/PlatformIcons/windows.png" alt="" class="img-circle projImgIcon" />
+              <img src="./assets/img/PlatformIcons/desktop.png" alt="" class="img-circle projImgIcon" />
+              <img src="./assets/img/PlatformIcons/website.png" alt="" class="img-circle projImgIcon" />
+            </div>
+            <div class="projImgDiv" onclick="loadPage('GraphicDesign')">
+              <img src="./assets/img/All_Projects/graphic-design-logo.png" alt="" class="img-rounded" />
+              <div class="projDesc">Graphic Design</div>
+            </div>  
+          </div>
+        </div>
+        <div class="span4 addMargin10 myWidget">
+            <div class="projWidget" data-type="uxreview">
+              <div class="typeImgDiv">
+                <img src="./assets/img/PlatformIcons/website.png" alt="" class="img-circle projImgIcon" />
+              </div>
+              <div class="projImgDiv" onclick="loadPage('QMetryWebsite')">
+                <img src="./assets/img/All_Projects/ui-design.png" alt="" class="img-rounded" />
+                <div class="projDesc">Web Design</div>
+              </div>  
+            </div>          
+        </div>        
+        <div class="span4 addMargin10 myWidget">
+          <div class="projWidget" data-type="apple">
+            <div class="typeImgDiv">
+              <img src="./assets/img/PlatformIcons/website.png" alt="" class="img-circle projImgIcon" />
+            </div>
+            <div class="projImgDiv" onclick="loadPage('UXDesign')">
+              <img src="./assets/img/All_Projects/UXDesign.jpg" alt="" class="img-rounded" />
+              <div class="projDesc">UX design</div>
+            </div>  
+          </div>
+        </div>       
+        <div class="span4 addMargin10 myWidget">
+          <div class="projWidget" data-type="apple">
+            <div class="typeImgDiv">
+               <img src="./assets/img/PlatformIcons/iPhone.png" alt="" class="img-circle projImgIcon" />
+               <img src="./assets/img/PlatformIcons/Android.png" alt="" class="img-circle projImgIcon" />
+               <img src="./assets/img/PlatformIcons/blackberry.png" alt="" class="img-circle projImgIcon" />
+            </div>
+            <div class="projImgDiv" onclick="loadPage('ISOSDev')">
+              <img src="./assets/img/All_Projects/ISOS.png" alt="" class="img-rounded" />
+              <div class="projDesc">Mobile UI development</div>
+            </div>  
+          </div>
+        </div> 
+        
+        <div class="span4 addMargin10 myWidget">
+          <div class="projWidget" data-type="apple">
+            <div class="typeImgDiv">
+              <img src="./assets/img/PlatformIcons/website.png" alt="" class="img-circle projImgIcon" />
+            </div>
+            <div class="projImgDiv" onclick="loadPage('Razemedia')">
+              <img src="./assets/img/All_Projects/Razemedia.png" alt="" class="img-rounded" />
+              <div class="projDesc">UX Review</div>
+            </div>  
+          </div>
+        </div> 
+        
+        <div class="span4 addMargin10 myWidget">
+          <div class="projWidget" data-type="apple">
+            <div class="typeImgDiv">
+              <img src="./assets/img/PlatformIcons/Android.png" alt="" class="img-circle projImgIcon" />
+              <img src="./assets/img/PlatformIcons/iPhone.png" alt="" class="img-circle projImgIcon"  />
+               <img src="./assets/img/PlatformIcons/desktop.png" alt="" class="img-circle projImgIcon" />
+            </div>
+            <div class="projImgDiv" onclick="loadPage('InteractionDesign')">
+              <img src="./assets/img/All_Projects/thermostat.png" alt="" class="img-rounded" />
+              <div class="projDesc">Interaction Design</div>
+            </div>  
+          </div>
+        </div> 
+      </div>
+      
+      <hr />      
+    </div> <!-- /container -->
+    <div class="preloader hidden">
+      <div class="loaderMsg">
+      	<center>
+	        <h2>Loading...</h2>
+	        <h3>Thank you for your patience</h3>
+      	</center>
+      </div>      
+      <div class="bubbles">
+        <span></span>
+        <span id="bubble2"></span>
+        <span id="bubble3"></span>
+      </div>
+    </div>
+      
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!--<script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>-->
+    <script>
+      var projectWidgets;
+      var widType;
+      var globalFilterOptions = new Array();
+      
+      
+
+      $(document).ready(function(){        
+        projectWidgets = $(".projWidget");
+        //console.log($(".customProjectIcon"));
+        $(".customProjectIcon").on("click" , updateFilter);
+      });
+
+      /*
+        This should keep the filter items updated
+      */
+      function updateFilter(){  
+        var optionValue = $(this).attr("filter-value");
+        if(globalFilterOptions.indexOf(optionValue) != -1){
+          //we remove it from the filter
+          console.log(globalFilterOptions.indexOf(optionValue));
+          globalFilterOptions.splice(globalFilterOptions.indexOf(optionValue),1);
+        } else{
+          globalFilterOptions.push(optionValue);
+        }
+        //console.log($(this).attr("filter-value"));        
+        filterProjects(globalFilterOptions);
+      }
+
+      /*
+        This function takes type as arguments and hides the widgets if the type is not found
+      */
+      function filterProjects(options){
+        var flag,widTypeStr;
+        if(options.length > 0){
+          for(pWidget=0; pWidget<projectWidgets.length;pWidget++){
+            flag = false;
+            //for each widget we get the types associated
+            widTypeStr = projectWidgets[pWidget].getAttribute("data-type");
+            widType = widTypeStr.split(",");
+            for(type in options){
+              if(widType.indexOf(options[type]) != -1){
+                //we have found at least one match so we need to display the widget
+                flag = true;
+                break;
+              }
+            }
+            //at the end of the for loop if the flag is false it means there were no matches and therefore we hide the widget
+            if(!flag){
+              projectWidgets[pWidget].parentElement.setAttribute("class", "hidden myWidget");
+            }
+          }//the main for ends here  
+        } else{
+          //display all
+          console.log("showing all");
+          $(".myWidget").attr("class", "span4 addMargin10 myWidget");
+        }
+        
+      }
+
+      function loadPage(pageName){
+        pageToLoad = './' + pageName + '.html #myContent';
+        //$('#mainContent').load('./QMetryWebsite.html #myContent', function(){console.log("pageName:" + pageName + " || pageToLoad: " + pageToLoad)});
+        $("#mainContent").fadeOut();
+        $(".preloader").removeClass("hidden");
+        setTimeout(function(){
+          $('#mainContent').load('' + pageToLoad, function(response, txtStatus, xhr){
+              //this will execute when the page is loaded (as per documentation)
+              console.log("pageName:" + pageName + " || pageToLoad: " + pageToLoad);
+              $('#backContainer').fadeIn();
+              $("#mainContent").fadeIn();
+              $(".preloader").addClass("hidden");
+            });
+        }, 1500);
+      }
+
+      function takeMeBack(){
+        // I don't need any arguments as I am going back to the same page every time.
+        $('#backContainer').fadeOut();
+        $("#mainContent").fadeOut();
+        $(".preloader").removeClass("hidden");
+        setTimeout(function(){
+            $('#mainContent').load('./ProjectHome.html #mainContent');
+            $(".preloader").addClass("hidden");
+            $("#mainContent").fadeIn();
+          }, 2000);
+      }
+
+    </script>
+
+  </body>
+</html>
